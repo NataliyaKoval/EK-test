@@ -16,10 +16,11 @@
   <div class="form-container">
     <p class="form-description">Sign in to your account</p>
 
-    <form action="#" method="post">
+    <form action="#" data-form method="post">
       <div class="form-field">
         <p class="label">Email</p>
-        <input class="input" id="email" name="email" type="email" value="">
+        <input class="input" data-email name="email" type="email">
+        <p class="error-message hidden" data-email-message>Enter a valid email</p>
       </div>
 
       <div class="form-field">
@@ -27,7 +28,8 @@
           <p>Password</p>
           <a class="link" href="https://www.google.com" target="_blank">Forgot your password?</a>
         </div>
-        <input class="input" name="password" type="password" value="">
+        <input class="input" data-password name="password" type="password">
+        <p class="error-message hidden" data-password-message>Password must be at least 6 characters long</p>
       </div>
 
       <div class="form-field checkbox-field">
@@ -46,5 +48,6 @@
 
 </main>
 
+<script src="script.js"></script>
 </body>
 </html>
